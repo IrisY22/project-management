@@ -1,6 +1,6 @@
 import Button from "./Buttons";
 
-export default function ProjectsSidebar({ onOpenModal }) {
+export default function ProjectsSidebar({ onStartAddProject }) {
 
   return (
     <aside className="w-1/3 px-8 py-16 bg-stone-900 text-stone-50 md:w-72 rounded-r-xl">
@@ -9,7 +9,7 @@ export default function ProjectsSidebar({ onOpenModal }) {
         Your Projects
       </h2>
       <div>
-        <Button content={'+ Add Project'} />
+        <Button onClick={onStartAddProject}>+ Add Project</Button>
       </div>
       <ul className="mt-8">
         <li className="flex justify-between my-4">
